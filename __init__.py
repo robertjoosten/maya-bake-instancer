@@ -83,7 +83,7 @@ def bake(instancerName, start, end, progress=None):
     container = cmds.group(
         world=True, 
         empty=True, 
-        n=instancerName + "_bake_1"
+        n="{0}_bake_1".format(instancerName)
     )
     
     # loop time
@@ -139,7 +139,7 @@ def bake(instancerName, start, end, progress=None):
                 parentShort = parent.split("|")[-1].split(":")[-1]
                 
                 # duplicate mesh
-                name = instancerName + "_" + parentShort + "_1"
+                name = "{0}_{1}_1".format(instancerName, parentShort)
                 path = cmds.duplicate(parent, n=name)[0]
                 path = cmds.parent(path, container)[0]
                 
