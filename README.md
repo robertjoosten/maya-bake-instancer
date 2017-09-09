@@ -12,11 +12,7 @@ Copy the **rjBakeInstancer** folder to your Maya scripts directory:
 Command line:
 ```python
 import rjBakeInstancer
-rjBakeInstancer.bake(
-    instancer,
-    start,
-    end,
-)
+rjBakeInstancer.bake(instancer, start, end)
 ```
 
 Display UI:
