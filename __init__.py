@@ -43,13 +43,15 @@ def bake(instancerName, start, end, progress=None):
     :param QProgressBar progress: Update ui ( Optional )
     :return: Group that contains all of the baked information
     :rtype: str
+    :raises RuntimeError: When the instancer doesn't exist
+    :raises RuntimeError: When there are no particles attached
     """
     # store all particle information in data variable
     data = {}
     
     # get instance
     if not cmds.objExists(instancerName):
-        raise("Instancer doesn't exist!")
+        raise RuntimeError("Instancer doesn't exist!")
         return
         
     # set visible
@@ -64,7 +66,7 @@ def bake(instancerName, start, end, progress=None):
         "{0}.inputPoints".format(instancerName)
     )
     if not particleName:
-        raise("No particles connected!")
+        raise RuntimeError("No particles connected!")
         return
     
     particleName = particleName[0]
