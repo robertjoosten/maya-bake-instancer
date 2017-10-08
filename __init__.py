@@ -1,25 +1,43 @@
-"""					
-I N S T A L L A T I O N:
-    Copy the "rjBakeInstancer" folder to your Maya scripts directory:
-        C:\Users\<USER>\Documents\maya\scripts
+"""				
+Bake an instancer node to individual animated pieces of geometry. Useful for 
+people that haven't switched to Maya 2017 yet, where this is standard 
+functionality.
 
-U S A G E:
-    Display the UI with the following code:
-        import rjBakeInstancer.ui
-        rjBakeInstancer.ui.show()
-    
-    Command line:
-        import rjBakeInstancer
-        rjBakeInstancer.bake(
-            instancer,
-            start,
-            end,
-        )
+.. figure:: https://github.com/robertjoosten/rjBakeInstancer/raw/master/README.gif
+   :align: center
+   
+`Link to Video <https://vimeo.com/188421440>`_
 
-N O T E:
-    This script lets you bake an instancer node into individual animated
-    pieces of geometry. Usefull for people that haven't switched over
-    to Maya 2017 yet, where this is standard functionality.
+Installation
+============
+Copy the **rjBakeInstancer** folder to your Maya scripts directory
+::
+    C:/Users/<USER>/Documents/maya/scripts
+
+Usage
+=====
+Display the UI with the following code
+::
+    import rjBakeInstancer.ui
+    rjBakeInstancer.ui.show()
+
+Command line
+::
+    import rjBakeInstancer
+    rjBakeInstancer.bake(
+        instancer,
+        start,
+        end,
+    )
+
+Note
+====
+This script lets you bake an instancer node into individual animated pieces 
+of geometry. Usefull for people that haven't switched over to Maya 2017 yet, 
+where this is standard functionality.
+
+Code
+====
 """
 
 import math

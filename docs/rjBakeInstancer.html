@@ -1,0 +1,283 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>rjBakeInstancer package &#8212; rjBakeInstancer  &#39;&#39; documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     ' &#39;&#39;',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rjBakeInstancer  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="rjbakeinstancer-package">
+<h1>rjBakeInstancer package<a class="headerlink" href="#rjbakeinstancer-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rjBakeInstancer.ui.html">rjBakeInstancer.ui module</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="module-rjBakeInstancer">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-rjBakeInstancer" title="Permalink to this headline">¶</a></h2>
+<p>Bake an instancer node to individual animated pieces of geometry. Useful for 
+people that haven’t switched to Maya 2017 yet, where this is standard 
+functionality.</p>
+<div class="figure align-center">
+<img alt="https://github.com/robertjoosten/rjBakeInstancer/raw/master/README.gif" src="https://github.com/robertjoosten/rjBakeInstancer/raw/master/README.gif" />
+</div>
+<p><a class="reference external" href="https://vimeo.com/188421440">Link to Video</a></p>
+<div class="section" id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<p>Copy the <strong>rjBakeInstancer</strong> folder to your Maya scripts directory</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span><span class="o">/</span><span class="n">Users</span><span class="o">/&lt;</span><span class="n">USER</span><span class="o">&gt;/</span><span class="n">Documents</span><span class="o">/</span><span class="n">maya</span><span class="o">/</span><span class="n">scripts</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<p>Display the UI with the following code</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rjBakeInstancer.ui</span>
+<span class="n">rjBakeInstancer</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Command line</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rjBakeInstancer</span>
+<span class="n">rjBakeInstancer</span><span class="o">.</span><span class="n">bake</span><span class="p">(</span>
+    <span class="n">instancer</span><span class="p">,</span>
+    <span class="n">start</span><span class="p">,</span>
+    <span class="n">end</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="note">
+<h3>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
+<p>This script lets you bake an instancer node into individual animated pieces 
+of geometry. Usefull for people that haven’t switched over to Maya 2017 yet, 
+where this is standard functionality.</p>
+</div>
+<div class="section" id="code">
+<h3>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="rjBakeInstancer.asMDagPath">
+<code class="descclassname">rjBakeInstancer.</code><code class="descname">asMDagPath</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#rjBakeInstancer.asMDagPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>OpenMaya.MObject -&gt; OpenMaya.MDagPath</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>obj</strong> (<em>OpenMaya.MObject</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">OpenMaya.MDagPath</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjBakeInstancer.asMFnTransform">
+<code class="descclassname">rjBakeInstancer.</code><code class="descname">asMFnTransform</code><span class="sig-paren">(</span><em>dag</em><span class="sig-paren">)</span><a class="headerlink" href="#rjBakeInstancer.asMFnTransform" title="Permalink to this definition">¶</a></dt>
+<dd><p>OpenMaya.MDagPath -&gt; OpenMaya.MFnTransform</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dag</strong> (<em>OpenMaya.MDagPath</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">OpenMaya.MFnTransform</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjBakeInstancer.asMObject">
+<code class="descclassname">rjBakeInstancer.</code><code class="descname">asMObject</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#rjBakeInstancer.asMObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>str -&gt; OpenMaya.MObject</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<em>str</em>) – Path to Maya object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">OpenMaya.MObject</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjBakeInstancer.bake">
+<code class="descclassname">rjBakeInstancer.</code><code class="descname">bake</code><span class="sig-paren">(</span><em>instancerName</em>, <em>start</em>, <em>end</em>, <em>progress=None</em><span class="sig-paren">)</span><a class="headerlink" href="#rjBakeInstancer.bake" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process an instancer node over the specified frame range, reading the 
+positions and objects. With this data objects are duplicated and 
+positioned to mimic the instancer. With the particle data individual 
+objects can be matched over the different frames and animated. When
+a particle “dies”, the visibility is turned off.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>instancerName</strong> (<em>str</em>) – Name if the instancer to bake</li>
+<li><strong>start</strong> (<em>int</em>) – Start frame</li>
+<li><strong>end</strong> (<em>int</em>) – End frame</li>
+<li><strong>progress</strong> (<em>QProgressBar</em>) – Update ui ( Optional )</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Group that contains all of the baked information</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">str</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><strong>RuntimeError</strong> – When the instancer doesn’t exist</li>
+<li><strong>RuntimeError</strong> – When there are no particles attached</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjBakeInstancer.keyTransform">
+<code class="descclassname">rjBakeInstancer.</code><code class="descname">keyTransform</code><span class="sig-paren">(</span><em>path</em>, <em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#rjBakeInstancer.keyTransform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Key transform, loop over translate, rotate and scale and set keys
+with their current value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> (<em>str</em>) – path to Maya object</li>
+<li><strong>t</strong> (<em>int</em>) – time</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="rjBakeInstancer.keyVisibility">
+<code class="descclassname">rjBakeInstancer.</code><code class="descname">keyVisibility</code><span class="sig-paren">(</span><em>path</em>, <em>t</em>, <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#rjBakeInstancer.keyVisibility" title="Permalink to this definition">¶</a></dt>
+<dd><p>Key visibility, will create a switch putting a a key with the specified
+value on the time parsed. But will also put the reverse value on t-1.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> (<em>str</em>) – path to Maya object</li>
+<li><strong>t</strong> (<em>int</em>) – time</li>
+<li><strong>v</strong> (<em>int</em>) – value</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">rjBakeInstancer package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-rjBakeInstancer">Module contents</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#note">Note</a></li>
+<li><a class="reference internal" href="#code">Code</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/rjBakeInstancer.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rjBakeInstancer  &#39;&#39; documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, &#39;Robert Joosten&#39;.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
+    </div>
+  </body>
+</html>

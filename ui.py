@@ -2,7 +2,7 @@ from maya import cmds, OpenMayaUI
 
 # import pyside, do qt version check for maya 2017 >
 qtVersion = cmds.about(qtVersion=True)
-if qtVersion.startswith("4"):
+if qtVersion.startswith("4") or type(qtVersion) != str:
     from PySide.QtGui import *
     from PySide.QtCore import *
     import shiboken

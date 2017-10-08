@@ -1,0 +1,17 @@
+rjBakeInstancer package
+=======================
+
+Submodules
+----------
+
+.. toctree::
+
+   rjBakeInstancer.ui
+
+Module contents
+---------------
+
+.. automodule:: rjBakeInstancer
+    :members:
+    :undoc-members:
+    :show-inheritance:
