@@ -14,12 +14,12 @@ If user wishes to not use the shelf button the following commands can be used.
 
 Command line:
 ```python
-import rjBakeInstancer
-rjBakeInstancer.bake(instancer, start, end)
+import bakeInstancer
+bakeInstancer.bake(instancer, start, end)
 ```
 
 Display UI:
 ```python
-import rjBakeInstancer.ui
-rjBakeInstancer.ui.show()
+import bakeInstancer.ui
+bakeInstancer.ui.show()
 ```
