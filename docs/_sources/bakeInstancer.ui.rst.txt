@@ -1,0 +1,7 @@
+bakeInstancer\.ui module
+========================
+
+.. automodule:: bakeInstancer.ui
+    :members:
+    :undoc-members:
+    :show-inheritance:

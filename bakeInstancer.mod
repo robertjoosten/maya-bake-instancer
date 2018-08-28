@@ -1,0 +1,5 @@
++ MAYAVERSION:2014 bakeInstancer 0.7.1 <PATH>
++ MAYAVERSION:2015 bakeInstancer 0.7.1 <PATH>
++ MAYAVERSION:2016 bakeInstancer 0.7.1 <PATH>
++ MAYAVERSION:2017 bakeInstancer 0.7.1 <PATH>
++ MAYAVERSION:2018 bakeInstancer 0.7.1 <PATH>

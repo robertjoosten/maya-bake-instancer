@@ -1,0 +1,7 @@
+bakeInstancer\.utils module
+===========================
+
+.. automodule:: bakeInstancer.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:

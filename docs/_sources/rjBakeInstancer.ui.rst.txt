@@ -1,7 +1,0 @@
-rjBakeInstancer\.ui module
-==========================
-
-.. automodule:: rjBakeInstancer.ui
-    :members:
-    :undoc-members:
-    :show-inheritance:

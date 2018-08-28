@@ -1,0 +1,18 @@
+bakeInstancer package
+=====================
+
+.. automodule:: bakeInstancer
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   bakeInstancer.commands
+   bakeInstancer.install
+   bakeInstancer.ui
+   bakeInstancer.utils
+

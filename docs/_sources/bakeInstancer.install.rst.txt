@@ -1,0 +1,7 @@
+bakeInstancer\.install module
+=============================
+
+.. automodule:: bakeInstancer.install
+    :members:
+    :undoc-members:
+    :show-inheritance:

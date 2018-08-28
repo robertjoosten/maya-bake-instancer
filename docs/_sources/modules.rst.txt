@@ -1,7 +1,7 @@
-rjBakeInstancer
-===============
+bakeInstancer
+=============
 
 .. toctree::
    :maxdepth: 4
 
-   rjBakeInstancer
+   bakeInstancer

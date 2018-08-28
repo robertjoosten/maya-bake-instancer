@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>bakeInstancer &#8212; bakeInstancer  &#39;&#39; documentation</title>
+    <title>bakeInstancer.commands module &#8212; bakeInstancer  &#39;&#39; documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -43,25 +43,44 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="bakeinstancer">
-<h1>bakeInstancer<a class="headerlink" href="#bakeinstancer" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="bakeInstancer.html">bakeInstancer package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="bakeInstancer.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bakeInstancer.html#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bakeInstancer.html#note">Note</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bakeInstancer.html#submodules">Submodules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="bakeInstancer.commands.html">bakeInstancer.commands module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bakeInstancer.install.html">bakeInstancer.install module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bakeInstancer.ui.html">bakeInstancer.ui module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bakeInstancer.utils.html">bakeInstancer.utils module</a></li>
+  <div class="section" id="module-bakeInstancer.commands">
+<span id="bakeinstancer-commands-module"></span><h1>bakeInstancer.commands module<a class="headerlink" href="#module-bakeInstancer.commands" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="bakeInstancer.commands.bake">
+<code class="descclassname">bakeInstancer.commands.</code><code class="descname">bake</code><span class="sig-paren">(</span><em>instancerName</em>, <em>start</em>, <em>end</em>, <em>progress=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bakeInstancer.commands.bake" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process an instancer node over the specified frame range, reading the 
+positions and objects. With this data objects are duplicated and 
+positioned to mimic the instancer. With the particle data individual 
+objects can be matched over the different frames and animated. When
+a particle “dies”, the visibility is turned off.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>instancerName</strong> (<em>str</em>) – Name if the instancer to bake</li>
+<li><strong>start</strong> (<em>int</em>) – Start frame</li>
+<li><strong>end</strong> (<em>int</em>) – End frame</li>
+<li><strong>progress</strong> (<em>QProgressBar</em>) – Update ui ( Optional )</li>
 </ul>
-</li>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Group that contains all of the baked information</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">str</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><strong>RuntimeError</strong> – When the instancer doesn’t exist</li>
+<li><strong>RuntimeError</strong> – When there are no particles attached</li>
 </ul>
-</li>
-</ul>
-</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </div>
 
 
@@ -73,7 +92,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/modules.rst.txt"
+      <li><a href="_sources/bakeInstancer.commands.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
