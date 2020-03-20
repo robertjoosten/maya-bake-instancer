@@ -4,3 +4,4 @@
 + MAYAVERSION:2017 bakeInstancer 0.7.1 <PATH>
 + MAYAVERSION:2018 bakeInstancer 0.7.1 <PATH>
 + MAYAVERSION:2019 bakeInstancer 0.7.1 <PATH>
++ MAYAVERSION:2020 bakeInstancer 0.7.1 <PATH>
